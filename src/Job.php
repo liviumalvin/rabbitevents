@@ -22,7 +22,12 @@ class Job extends \Enqueue\LaravelQueue\Job
      * @var
      */
     private $listenerName;
-
+    
+    public function getJobId()
+    {
+        return null;
+    }
+    
     public function __construct(
         Container $container,
         PsrContext $context,
